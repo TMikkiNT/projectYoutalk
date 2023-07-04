@@ -2,12 +2,23 @@
 
   @media screen and (max-width: 600px)
 {
-  
-}
+.page-footer-grid {
+    grid-gap: 2.5rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-areas:
+        "logo . "
+        "nav1 nav2"
+        "nav3 nav4"
+        "moz moz"
+        "legal legal";
+    grid-template-columns: 1fr 1fr;
+}}
 
 body{
     background: #A6FFFF;
     margin: 0px;
+   
 }
 
 header{
@@ -40,11 +51,12 @@ menu{
     margin-top: 0rem; /* Отступ снизу */ 
     /*float: inline-end;*/
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     font-family: Montserrat;
     font-weight: 100;
     line-height: 114%;
     letter-spacing: 0.25px;
+    color: #000;
    }
 
    .buttons:hover {
@@ -57,8 +69,8 @@ menu{
     padding: 1rem 1rem; /* Поля вокруг текста */
     margin-top: 0rem; /* Отступ снизу */ 
     /*float: inline-end;*/
-    font-size: 15px;
-    size: 15px;
+    font-size: 21px;
+    size: 18px;
     border-radius: 20px;
     background: #0FF;
    }
@@ -76,6 +88,8 @@ menu{
     size: 15px;
     font-family: Montserrat;
     letter-spacing: 0.25px;
+    color: #006eff;
+    background: #E3F5F5;
    }
 
    .button:hover {
@@ -217,3 +231,124 @@ menu{
     font: message-box; 
     font-size: 20px;  
     }
+
+footer{
+  width: 100%;
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-radius: 50px 50px 0px 0px;
+  padding: 0 0 40px 0;
+  background: #2963A3;
+  position: fixed;
+  left: 0; bottom: 0;
+}
+
+  .footer_ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer_ssilki{
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+  .footer_left_button{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer_punkt_1{
+    color: #FFF;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .footer_punkt_2{
+    color: #FFF;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .footer_info{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .footer_hover{
+    transition: 0.5s;
+    text-decoration: none;
+    color: #7dffff;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .footer_text{
+    color: #FFF;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .footer_email{
+    width: 30%;
+  }
+
+  .footer_hover:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    color: #E3F5F5;
+  }
+
+  .footer_input{
+    width: 300px;
+    height: 45px;
+    border-radius: 4px;
+    background: #FFF;
+  }
+
+  .footer_email_sibmit{
+    display: flex;
+  }
+
+  .btn{
+    display: inline-flex;
+    height: 50px;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    gap: 10px;
+    background: #16C8BB;
+  }
+
+  .btn:hover{
+    background: #27fff1;
+  }
