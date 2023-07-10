@@ -1,33 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-  @media screen and (max-width: 600px)
-{
-.page-footer-grid {
-    grid-gap: 2.5rem;
-    display: grid;
-    gap: 2.5rem;
-    grid-template-areas:
-        "logo . "
-        "nav1 nav2"
-        "nav3 nav4"
-        "moz moz"
-        "legal legal";
-    grid-template-columns: 1fr 1fr;
-}}
+@media(max-width: 1410px) {
+  header{height: 220px;}
+  menu{display: flex;
+    flex-direction: column;
+    align-items: flex-end;}
+} 
 
 body{
     background: #A6FFFF;
-    margin: 0px;
-   
+    margin: 0px; 
 }
 
 header{
     width: 100%;
-    height: 90px;
+    height: 120px;
     border-radius: 0px 0px 40px 40px;
     background: var(--bg-white, #FFF);
     margin: 0;
     padding: 0;
+    display: flex;
+	justify-content: flex-start;
  /*   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 0.5fr));
   grid-template-rows: auto;
@@ -36,10 +29,15 @@ header{
 
 menu{
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
     margin-top: 20px;
+    
     /*margin-left: 50px;*/
+}
+
+li{
+  list-style-type: none;
 }
 
   .buttons {
@@ -48,7 +46,7 @@ menu{
   /*     border: none; /* Убираем рамку */
     border-radius: 20px;
     padding: 1rem 1rem; /* Поля вокруг текста */
-    margin-top: 0rem; /* Отступ снизу */ 
+    margin-top: 2rem; /* Отступ снизу */ 
     /*float: inline-end;*/
     text-align: center;
     font-size: 20px;
@@ -62,14 +60,14 @@ menu{
    .buttons:hover {
     transition: 0.5s;
     transform: scale(1.2);
-    text-decoration: none;
+    
     background: #fff; /* Синий цвет фона */
     color: rgb(0, 0, 0); /* Белый цвет текста */
   /*     border: none; /* Убираем рамку */
     padding: 1rem 1rem; /* Поля вокруг текста */
-    margin-top: 0rem; /* Отступ снизу */ 
+    margin-top: 1rem; /* Отступ снизу */ 
     /*float: inline-end;*/
-    font-size: 21px;
+    font-size: 25px;
     size: 18px;
     border-radius: 20px;
     background: #0FF;
@@ -81,10 +79,10 @@ menu{
   /*     border: none; /* Убираем рамку */
     border-radius: 20px;
     padding: 1rem 1rem; /* Поля вокруг текста */
-    margin: 18px 50px 30px 15px; 
+    margin: 25px 50px 30px 15px; 
     /*float: inline-end;*/
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     size: 15px;
     font-family: Montserrat;
     letter-spacing: 0.25px;
@@ -113,7 +111,7 @@ menu{
     /*position: absolute;*/
     margin-bottom: 0rem; 
     margin-left: 50px; 
-    margin-top: 20px;
+    margin-top: 25px;
   }
    .navig_ico_header:hover{
     transition: 0.5s;
@@ -156,7 +154,7 @@ menu{
     margin-top: 0rem; /* Отступ снизу */ 
     /*float: inline-end;*/
     text-align: center;
-    font-size: 14px;
+    font-size: 25px;
     font-family: Montserrat;
     font-weight: 100;
     line-height: 114%;
@@ -165,7 +163,7 @@ menu{
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;    
+    font-size: 25px;    
     border: none;
     outline: none;
     padding: 1rem;
@@ -234,14 +232,38 @@ menu{
 
 footer{
   width: 100%;
-  display: block;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   border-radius: 50px 50px 0px 0px;
   padding: 0 0 40px 0;
   background: #2963A3;
   position: fixed;
   left: 0; bottom: 0;
+  padding: 2rem 1rem;
+}
+
+.footer_padding{
+  padding: 0rem 1rem;
+}
+
+.footer_ssilki{
+  position: relative;
+  /*display: flex;
+  justify-content: space-between;
+  align-items: flex-start;*/
+}
+
+.footer_left_button{
+  display: flex;
+  justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;  
+}
+
+.footer_left_button_1{
+  display: flex;
+  justify-content: space-between;
 }
 
   .footer_ul{
@@ -251,17 +273,6 @@ footer{
     gap: 0.5rem;
   }
 
-  .footer_ssilki{
-    padding: 2rem 1rem;
-    position: relative;
-}
-
-  .footer_left_button{
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-  }
-
   .footer_menu{
     display: flex;
     flex-direction: column;
@@ -269,22 +280,18 @@ footer{
     gap: 16px;
   }
 
-  .footer_punkt_1{
+  .footer_punkt{
     color: #FFF;
     font-size: 14px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-  }
+  }    
 
-  .footer_punkt_2{
-    color: #FFF;
-    font-size: 14px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
+  .footer_punkt_1{
+    margin-right: 50px;
+    margin-top: 10px;
   }
 
   .footer_info{
@@ -311,14 +318,15 @@ footer{
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-    display: inline-flex;
-    align-items: flex-start;
     gap: 16px;
     margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .footer_email{
-    width: 30%;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer_hover:hover{
@@ -330,6 +338,7 @@ footer{
   .footer_input{
     width: 300px;
     height: 45px;
+    font-size: 15px;
     border-radius: 4px;
     background: #FFF;
   }
@@ -351,4 +360,21 @@ footer{
 
   .btn:hover{
     background: #27fff1;
+  }
+
+  .footer_email_comment{
+    display: flex;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+  }
+
+  .footer_img{
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    margin-top: 10px;
   }
