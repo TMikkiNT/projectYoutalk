@@ -11,10 +11,12 @@ main{
 .put{
     width: 100%;
 }
+
 .put_position{
     position: relative;
     padding-top: 16px;
 }
+
 .navigation_page{
     display: flex;
     flex-direction: row;
@@ -26,12 +28,14 @@ main{
     width: 100%;
     padding-left: 0;
 }
+
 .navigator_items{
     height: inherit;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
 }
+
 .navigator_otstup{
     transition: 0.2s;
     text-decoration: none;
@@ -40,6 +44,7 @@ main{
     white-space: nowrap;
     width: 100%;
 }
+
 .navigator_otstup:hover{
     transition: 0.2s;
     color: aqua;
@@ -48,23 +53,6 @@ main{
 .info {
     padding: 20px 0 30px;
 }
-
-@media (max-width: 1023.98px){
-.info {
-    padding: 20px 0 30px;
-}
-.main_otstup {
-    padding: 0 8px;
-    max-width: 748px;
-}}
-
-@media (max-width: 1439.98px){
-.info {
-    padding: 20px 0 30px;
-}
-.main_otstup {
-    max-width: 980px;
-}}
 
 .zagalovok{
     color: rgb(51, 51, 51);
@@ -94,7 +82,7 @@ main{
    /* display: block;
     height: inherit;
     position: relative;*/
-    border: 2px solid rgb(23, 234, 213);
+    border: 1px solid rgb(23, 234, 213);
 }
 
 .block_item_text{
@@ -134,7 +122,7 @@ align-self: stretch;
     height: inherit;
     position: relative;
     border-color:black; 
-    max-width: 45%;
+    max-width: 468px;
     border-radius: 10px;
     border: 1px solid rgb(119, 169, 164);
 }
@@ -144,7 +132,7 @@ align-self: stretch;
     height: inherit;
     position: relative;
     border-color:black; 
-    max-width: 30%;
+    max-width: 304px;
     border-radius: 10px;
     border: 1px solid rgb(119, 169, 164);
 }
@@ -243,3 +231,73 @@ color: #ffffff;
     color: #ebfac8;
     text-decoration: none;
 }
+
+/* Разрешение экранов */
+
+@media (max-width: 1300px){
+    /*.info {
+        padding: 20px 0 30px;
+    }
+    .main_otstup {
+        max-width: 960px;
+    }*/
+    main {
+        max-width: 960px;
+      }}
+    
+@media (max-width: 1100px){
+    .info {
+        padding: 20px 0 30px;
+    }
+    .main_otstup {
+        padding: 0 8px;
+        max-width: 748px;
+    }
+    .img_info{
+        width: 100%;
+        height: 70%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .block_information_item{
+        max-width: 728px;
+    }
+    .block_information_item_2{
+        max-width: 352px;
+    }}
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 720px;
+    }
+    .block_information_item_2{
+        max-width: 728px;
+    }}
+
+@media (max-width: 930px) {
+    main {
+        max-width: 700px;
+    }}
+
+@media (max-width: 800px) {
+    main {
+        max-width: 640px;
+    }}
+
+@media (max-width: 750px) {
+    main {
+        max-width: 410px;
+    }
+    .block_information_item
+    .block_information_item_2{
+        max-width: 352px;
+    }}
+    
+@media (max-width: 500px) {
+    main {
+        max-width: 320px;
+    }}
+
+@media (max-width: 430px) {
+    main {
+        max-width: 250px;
+    }}
