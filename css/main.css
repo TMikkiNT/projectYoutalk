@@ -232,6 +232,19 @@ color: #ffffff;
     text-decoration: none;
 }
 
+.main_open_page{
+    transition: 0.5s;
+    text-decoration: none;
+    color:#000000;
+}
+
+.main_open_page:hover{
+    transition: 0.5s;
+    text-decoration: none;
+    color:#0315d8;
+}
+
+
 /* Разрешение экранов */
 
 @media (max-width: 1300px){
